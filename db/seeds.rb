@@ -14,8 +14,9 @@ user1 = User.create(username: 'ronak94', name: 'Ronak')
 user2 = User.create(username: 'Alec D', name: 'alec')
 
 artgallary1 = Artgallary.create(url: 'https://c.shld.net/rpx/i/s/i/spin/10109385/prod_22969766112?hei=333&wid=333&op_sharpen=1', name: 'My First')
-
+artgallary2 = Artgallary.create(url: 'https://c.shld.net/rpx/i/s/i/spin/10109385/prod_22969766112?hei=333&wid=333&op_sharpen=1', name: 'My Second')
 user_artgallary1 = UserArtgallary.create(user: user1, artgallary: artgallary1)
+user_artgallary1 = UserArtgallary.create(user: user1, artgallary: artgallary2)
 
 image1 = Image.create(url: 'https://c4.wallpaperflare.com/wallpaper/327/174/532/nature-paint-texture-art-wallpaper-preview.jpg', image_type: 'image', user: user1, artgallary: artgallary1, name: 'Trees are good Friend!!', description: 'lines on a page')
 image2 = Image.create(url: 'https://cdn.pixabay.com/photo/2016/12/06/01/26/colour-1885352_1280.jpg', image_type: 'image', user: user1, artgallary: artgallary1, name: 'Wow Colors!', description: "This place is cooler than Colton's gaming chair!!")
@@ -26,6 +27,8 @@ image6 = Image.create(url: 'https://media.istockphoto.com/photos/the-child-girl-
 image7 = Image.create(url: 'https://c4.wallpaperflare.com/wallpaper/823/727/632/boardwalk-footbridge-autumn-bank-rock-bay-wallpaper-preview.jpg', image_type: 'image', user: user1, artgallary: artgallary1, name: 'Special', description: 'Look at this small person I found?!?!')
 image8 = Image.create(url: 'https://c4.wallpaperflare.com/wallpaper/684/901/240/branch-park-bridge-stone-bridge-wallpaper-preview.jpg', image_type: 'image', user: user1, artgallary: artgallary1, name: 'Natural beauty', description: 'Why are my clothes so wet')
 image9 = Image.create(url: 'https://c0.wallpaperflare.com/preview/698/176/1024/abstract-expressionism-abstract-painting-acrylic-paint-art.jpg', image_type: 'image', user: user1, artgallary: artgallary1, name: 'Classic', description: 'Im going to be a granny!')
+image10 = Image.create(url: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1415&q=80', image_type: 'image', user: user1, artgallary: artgallary1, name: 'Abstract Form', description: 'Face expression talks everything')
+# image11 = Image.create(url: 'https://images.unsplash.com/photo-1551913902-c92207136625?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', image_type: 'image', user: user1, artgallary: artgallary1, name: 'Charcol Painting', description: 'in my eyes i see future')
 
 comment1 = Comment.create(comment_info: 'John: this color combination is so cool and poietic!!', user: user1, image: image1)
 comment2 = Comment.create(comment_info: 'Mackenzie: I want these painting', user: user1, image: image1)
